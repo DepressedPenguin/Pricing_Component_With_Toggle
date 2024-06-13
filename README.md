@@ -1,30 +1,27 @@
-# React + TypeScript + Vite
+<!DOCTYPE html>
+<html lang="en">
+<body>
+  <header>
+    <h1>Pricing Component With Toggle<</h1>
+  </header>
+  
+  <section>
+    <h2>Technologies Used</h2>
+    <ul>
+      <li><strong>React:</strong> JavaScript library for building user interfaces.</li>
+      <li><strong>SCSS (Sass):</strong> CSS preprocessor for enhancing CSS with variables and mixins.</li>
+      <li><strong>HTML:</strong> Standard markup language for creating web pages.</li>
+      <li><strong>JavaScript (ES6+):</strong> Modern JavaScript for adding interactivity and behavior.</li>
+      <li><strong>CSS Grid and Flexbox:</strong> CSS layout models for designing responsive layouts.</li>
+    </ul>
+  </section>
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
-
-Currently, two official plugins are available:
-
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
-
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
-
-- Configure the top-level `parserOptions` property like this:
-
-```js
-export default {
-  // other rules...
-  parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-  },
-}
-```
-
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+  <section>
+    <h2>Components Overview</h2>
+    <ul>
+      <li><strong>CardPrice Component:</strong> Displays pricing information in a visually appealing card format.</li>
+      <li><strong>Switcher Component:</strong> Toggle component for switching between yearly and monthly pricing.</li>
+    </ul>
+  </section>
+</body>
+</html>
