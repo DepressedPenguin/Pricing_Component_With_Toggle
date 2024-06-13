@@ -1,0 +1,38 @@
+// .SCSS FILE FOR MAIN
+
+.main_card {
+  // border: 1px solid red;
+  margin: 15px;
+  background-color: whitesmoke;
+  background-image: url("/src/assets/images/bg-bottom.svg");
+  background-repeat: no-repeat;
+  background-position: left;
+  background-size: cover;
+  // border: 1px solid wheat;
+  box-shadow: 5px 5px 5px grey;
+  border-radius: 10px;
+
+  height: 80dvh;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+.gradientBackground {
+  // background: linear-gradient(to bottom left, #0f1aa8 0%, #1c0101 100%);
+  background-color: #181819;
+  transition: all 0.2s;
+  transform: scale(1.1);
+}
+
+@media only screen and (max-width: 1200px) {
+  .main_card {
+    height: 920px;
+    gap: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+  }
+}

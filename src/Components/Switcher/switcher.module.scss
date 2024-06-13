@@ -1,0 +1,81 @@
+// .SCSS FILE FOR SWITCHER
+.switcherPrice {
+  // border: 1px solid red;
+  text-align: center;
+  // padding: 10px;
+}
+
+// TOGGLE SECTION
+.toggleMonthly {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+
+  //   border: 1px solid red;
+
+  p {
+    font-weight: 600;
+    font-size: 15px;
+    color: grey;
+  }
+}
+
+.headlineSwitcher {
+  margin-bottom: 20px;
+
+  h1 {
+    color: grey;
+  }
+}
+
+// SWITCHER
+.switcher_checkbox {
+  display: none;
+}
+
+// SWITCHER
+.switcher {
+  position: relative;
+  height: 23px;
+  width: 50px;
+  display: inline-block;
+  // background-color: #191919;
+  border-radius: 30px;
+}
+
+// Point ground
+.point {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  //   background-color: rgb(209 215 241);
+  background-color: #8e92ea;
+  //   border: 1px solid rgb(209 215 241);
+  border-radius: 30px;
+  cursor: pointer;
+}
+
+.point::before {
+  content: "";
+  position: absolute;
+  border-radius: 50%;
+  left: 28px;
+  width: 21px;
+  height: 22px;
+  //   background-color: rgb(150, 181, 255);
+  background-color: white;
+  transition: 0.7s;
+  cursor: pointer;
+}
+
+input:checked + .point::before {
+  transform: translateX(-24px);
+  background-color: rgb(109, 87, 87);
+}
+
+input:checked + .point {
+  background-color: wheat;
+}
